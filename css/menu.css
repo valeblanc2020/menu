@@ -1,0 +1,132 @@
+*{
+	padding: 0; 
+	margin: 0; 
+}
+
+body {
+	background: white; 
+	color: black; 
+    font-family: Arial, Helvetica, sans-serif;
+	}
+	
+main {
+	padding: 20px 20%;
+	}
+
+section {
+    padding: 5%;
+}
+
+section:nth-of-type(odd){
+    background-color: beige;
+}
+
+section:nth-of-type(even){
+    background-color:darkgoldenrod;
+}
+
+section h2{
+    margin-bottom: 5%;
+}
+
+/* Section 2 */
+section:nth-of-type(2) ul ul{
+    display:none;
+}
+
+section:nth-of-type(2) ul li:hover ul{
+    display:block;
+}
+
+/* Section 3 */
+section:nth-of-type(3) ul ul{
+    display:none;
+}
+
+section:nth-of-type(3) ul li:hover>ul{
+    display:block;
+}
+
+/* Section 4 */
+section:nth-of-type(4) ul {
+	border-bottom: 1px solid silver;
+    background-color: aliceblue;
+	font: 1em sans-serif;
+    width: 10em;
+	}
+	
+section:nth-of-type(4) ul li {
+	list-style-type: none;
+	border: 1px solid silver; 
+	border-width: 1px 1px 0 3px;
+	position: relative; 
+	}
+
+/* Section 5 */
+section:nth-of-type(5) ul {
+	border-bottom: 1px solid silver;
+    background-color: aliceblue;
+	font: 1em sans-serif;
+    width: 10em;
+	}
+	
+section:nth-of-type(5) ul li {
+	list-style-type: none;
+	border: 1px solid silver; 
+	border-width: 1px 1px 0 3px;
+	position: relative; 
+	}
+
+section:nth-of-type(5) ul ul {
+		display: none;
+		}
+		
+section:nth-of-type(5) ul li:hover>ul {
+		display: block; 
+		position: absolute; 
+		top: -1px; 
+		left: 100%;
+		}
+
+section:nth-of-type(5) ul li:hover {
+            background: yellowgreen;
+            font-weight: bold;
+            }
+            
+/* Section 6 */
+section:nth-of-type(6) ul {
+	border-bottom: 1px solid silver;
+    background-color: aliceblue;
+	font: 1em sans-serif;
+    width: 10em;
+	}
+
+section:nth-of-type(6) ul li{
+    height: 1.2em;      /* Important, sinon les listes sont trop hautes */
+    text-align:center;
+    }
+	
+section:nth-of-type(6) ul li {
+	list-style-type: none;
+	border: 1px solid silver; 
+	border-width: 1px 1px 0 3px;
+	position: relative; 
+	}
+
+section:nth-of-type(6) ul ul {
+		opacity: 0;
+        transition: all 0.5s ease;
+		}
+		
+section:nth-of-type(6) ul li:hover>ul {
+		opacity: 1; 
+		position: absolute; 
+		top: -1px; 
+		left: 100%;
+		}
+
+section:nth-of-type(6) ul li:hover {
+            background: yellowgreen;
+            font-weight: bold;
+            }
+            
